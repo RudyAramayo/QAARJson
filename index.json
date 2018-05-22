@@ -35,7 +35,8 @@
 "SnapShot" : "Can you take a snap shot properly?",
 "Button1Image" : "Is there 1 Image Carousel?",
 "Placement" : "Can the 3D Model be placed?",
-"Portal" : "Did the Portal Appear?"
+"Portal" : "Did the Portal Appear?",
+"Testing": "testing"
 },
 [
 "Thumbnail",
