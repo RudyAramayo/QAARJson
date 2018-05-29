@@ -38,6 +38,7 @@
 "Portal" : "Did the Portal Appear?",
 "Testing": "testing"
 },
+{ "testnumber" : "1",
 [
 "Thumbnail",
 "Plane",
@@ -52,7 +53,10 @@
 "Spin",
 "Pos",
 "SNAPOFF"
-],
+]
+}
+,
+{ "testnumber" : "2",
 [
 "Thumbnail",
 "Plane",
@@ -67,7 +71,9 @@
 "SnapShot",
 "SnapVideo",
 "SnapGallery"
-],
+]
+},
+{ "testnumber" : "3",
 [
 "Thumbnail",
 "Plane",
@@ -83,7 +89,9 @@
 "PortalOut",
 "NoInteract",
 "SNAPOFF"
-],
+]
+},
+{ "testnumber" : "4",
 [
 "Thumbnail",
 "Plane",
@@ -102,7 +110,9 @@
 "SnapShot",
 "SnapVideo",
 "SnapGallery"
-],
+]
+},
+{ "testnumber" : "5",
 [
 "Thumbnail",
 "Plane",
@@ -121,8 +131,5 @@
 "SnapShot",
 "SnapVideo",
 "SnapGallery"
-],
- [
- "Button1Text"
- ]
+]}
 ]
