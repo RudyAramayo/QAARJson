@@ -39,6 +39,7 @@
 "Testing": "testing"
 },
 { "testnumber" : "1",
+"tests" :
 [
 "Thumbnail",
 "Plane",
@@ -57,6 +58,7 @@
 }
 ,
 { "testnumber" : "2",
+"tests" :
 [
 "Thumbnail",
 "Plane",
@@ -74,6 +76,7 @@
 ]
 },
 { "testnumber" : "3",
+"tests" :
 [
 "Thumbnail",
 "Plane",
@@ -92,6 +95,7 @@
 ]
 },
 { "testnumber" : "4",
+"tests" :
 [
 "Thumbnail",
 "Plane",
@@ -113,6 +117,7 @@
 ]
 },
 { "testnumber" : "5",
+"tests" :
 [
 "Thumbnail",
 "Plane",
