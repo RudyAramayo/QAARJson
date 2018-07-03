@@ -123,18 +123,9 @@
 "tests" :
 [
 "Thumbnail",
-"Plane",
 "Placement",
 "Name",
-"Portal",
 "Video360",
-"PortalSelect",
-"PortalUnSelect",
-"Scale",
-"Pos",
-"PortalIn",
-"PortalOut",
-"NoInteract",
 "SNAPON",
 "SnapShot",
 "SnapVideo",
