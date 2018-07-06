@@ -122,10 +122,8 @@
 { "testnumber" : "5",
 "tests" :
 [
-"Thumbnail",
-"Placement",
-"Name",
-"Video360",
+"Trigger",
+"Video2D",
 "NoInteract",
 "NoControls",
 "SNAPON",
