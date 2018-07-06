@@ -44,7 +44,6 @@
 { "testnumber" : "1",
 "tests" :
 [
-"Thumbnail",
 "Plane",
 "Placement",
 "Spinner3D",
@@ -52,6 +51,7 @@
 "Model3D",
 "Select3D",
 "UnSelect3D",
+"Thumbnail",  
 "Interact",
 "Scale",
 "Spin",
@@ -63,7 +63,6 @@
 { "testnumber" : "2",
 "tests" :
 [
-"Thumbnail",
 "Plane",
 "Placement",
 "Spinner3D",
@@ -71,6 +70,7 @@
 "Model3D",
 "Select3D",
 "UnSelect3D",
+"Thumbnail",
 "NoInteract",
 "SNAPON",
 "SnapShot",
