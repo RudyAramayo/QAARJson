@@ -39,8 +39,8 @@
 "Button1Image" : "Is there 1 Image Carousel?",
 "Placement" : "Can the 3D Model be placed?",
 "Portal" : "Did the Portal Appear?",
-"Carousel": "Does the carousel show up?",
-"CarouselButton": "Does the carousel button link work?",
+"Carousel": "Does the carousel of buttons show up?",
+"CarouselButtonLinks": "Do all the carousel button links work?",
 },
 { "testnumber" : "1",
 "tests" :
@@ -126,6 +126,8 @@
 "SNAPON",
 "SnapShot",
 "SnapVideo",
-"SnapGallery"
+"SnapGallery",
+"Carousel",
+"CarouselButtonLinks"
 ]}
 ]
