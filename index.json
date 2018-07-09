@@ -41,6 +41,7 @@
 "Portal" : "Did the Portal Appear?",
 "Carousel": "Does the carousel of buttons show up?",
 "CarouselButtonLinks": "Do all the carousel button links work?",
+"CarouselImageButtonLinks": "Do multiple carousel image buttons show up?"
 },
 { "testnumber" : "1",
 "tests" :
@@ -129,5 +130,21 @@
 "SnapGallery",
 "Carousel",
 "CarouselButtonLinks"
+]},
+{ "testnumber" : "6",
+"tests" :
+[
+"Trigger",
+"Video2D",
+"NoInteract",
+"NoControls",
+"SNAPON",
+"SnapShot",
+"SnapVideo",
+"SnapGallery",
+"Carousel",
+"CarouselButtonLinks",
+"CarouselImageButtonLinks"
 ]}
+
 ]
