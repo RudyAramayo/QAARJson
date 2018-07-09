@@ -137,7 +137,7 @@
 "Trigger",
 "Video2D",
 "NoInteract",
-"NoControls",
+"Controls",
 "SNAPOFF",
 "Carousel",
 "CarouselButtonLinks",
