@@ -3,7 +3,7 @@
     "SheetId" : "1pDM9QKjRjRgDLu4cLRKiDst-pSWVLGW-pmC-_-DfIOE"
   },
 {
-"SNAPOFF" : "Is there a snapshot control?",
+"SNAPOFF" : "Is there no snapshot control?",
 "SnapGallery" : "Can you go to the gallery and come back property?",
 "ButtonG1Text" : "Is there > 1 Button Showing?",
 "Trigger" : "Does the Trigger Image Work?",
@@ -138,10 +138,7 @@
 "Video2D",
 "NoInteract",
 "NoControls",
-"SNAPON",
-"SnapShot",
-"SnapVideo",
-"SnapGallery",
+"SNAPOFF",
 "Carousel",
 "CarouselButtonLinks",
 "CarouselImageButtonLinks"
