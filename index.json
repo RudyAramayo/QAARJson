@@ -39,7 +39,8 @@
 "Button1Image" : "Is there 1 Image Carousel?",
 "Placement" : "Can the 3D Model be placed?",
 "Portal" : "Did the Portal Appear?",
-"Testing": "testing"
+"Carousel": "Does the carousel show up?",
+"CarouselButton": "Does the carousel button link work?",
 },
 { "testnumber" : "1",
 "tests" :
@@ -82,7 +83,6 @@
 "tests" :
 [
 "Plane",
-"Placement",
 "Name",
 "Portal",
 "Video360",
@@ -100,7 +100,6 @@
 "tests" :
 [
 "Plane",
-"Placement",
 "Name",
 "Portal",
 "Video360",
