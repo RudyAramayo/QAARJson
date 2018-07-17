@@ -142,5 +142,20 @@
 "Carousel",
 "CarouselButtonLinks",
 "CarouselImageButtonLinks"
+]},
+{ "testnumber" : "7",
+"tests" :
+[
+"Trigger"
+]},
+{ "testnumber" : "8",
+"tests" :
+[
+"Trigger"
+]},
+{ "testnumber" : "9",
+"tests" :
+[
+"Placement"
 ]}
 ]
