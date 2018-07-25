@@ -157,5 +157,16 @@
 "tests" :
 [
 "Placement"
+]},
+{ "testnumber" : "10",
+"tests" :
+[
+"Portal",
+"PortalIn",
+"PortalOut",
+"SNAPON",
+"SnapShot",
+"SnapVideo",
+"SnapGallery"
 ]}
 ]
