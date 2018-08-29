@@ -28,6 +28,7 @@
 "SnapVideo" : "Can you take a snap video properly?",
 "Video360" : "Does the 360 Video Play?",
 "Model3D" : "Does the Model Look Correct?",
+"MultiModel3D" : "Can you place multiple different model files successfully?",
 "Scale" : "Does 3D Scaling Work?",
 "UnSelect3D" : "Can you un-select the 3D Model?",
 "Button" : "Does a Button(s) \/ Carousel Show?",
@@ -39,9 +40,9 @@
 "Button1Image" : "Is there 1 Image Carousel?",
 "Placement" : "Can the 3D Model be placed?",
 "Portal" : "Did the Portal Appear?",
-"Carousel": "Does the carousel of buttons show up?",
-"CarouselButtonLinks": "Do all the carousel button links work?",
-"CarouselImageButtonLinks": "Do multiple carousel image buttons show up?"
+"Carousel" : "Does the carousel of buttons show up?",
+"CarouselButtonLinks" : "Do all the carousel button links work?",
+"CarouselImageButtonLinks" : "Do multiple carousel image buttons show up?"
 },
 { "testnumber" : "1",
 "tests" :
@@ -168,5 +169,16 @@
 "SnapShot",
 "SnapVideo",
 "SnapGallery"
-]}
+]},
+{ "testnumber" : "11",
+"tests" :
+[
+"Placement"
+]},
+{ "testnumber" : "12",
+"tests" :
+[
+"Model3D",
+"MultiModel3D"
+]},
 ]
