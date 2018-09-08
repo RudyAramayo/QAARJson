@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app" ng-class="{ie_blockscroll: dialog.visible}">
+<head>
+    <title>ENVRMNT</title>
+    <meta title="" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="ENVRMNT" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+    <meta property="og:type" content="" />
+    <meta property="video:release_date" content=""/>
+    <meta property="video:tag" content="" />
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+    <meta name="theme-color" content="#50e3c2">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="styles/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+    <link rel="stylesheet" type="text/css" href="styles/animate.min.css"/>
+    <script src="lib/hls.min.js"></script>
+    <script src="lib/jquery-2.2.2.min.js"></script>
+    <script src="lib/jquery-ui-1.11.4.min.js"></script>
+    <script src="lib/promise.js"></script>
+
+    <script src="lib/angular-1.5.5.min.js"></script>
+    <script src="lib/angular-route-1.5.5.min.js"></script>
+    <script src="lib/ng-img-crop.js"></script>
+    <script src="lib/update-meta.min.js"></script>
+    <script async charset="utf-8" src="//cdn.iframe.ly/embed.js?api_key=530856cabc9f9b768190d7" ></script>
+    <script src="all.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="lib/vr-player.min.css"/>
+    <script src="//cdn.dashjs.org/latest/dash.all.min.js"></script>
+    <script src="lib/babylon.js"></script>
+    <script src="lib/webvr-polyfill-config.js"></script>
+    <script src="lib/webvr-polyfill.min.js"></script>
+    <script src="lib/vr-player.min.js"></script>
+    <script src="lib/iphone-inline-video.browser.js"></script>
+    <script async charset="utf-8" src="//cdn.iframe.ly/embed.js?api_key=530856cabc9f9b768190d7" ></script>
+    <base href='/'/>
+</head>
+<body>
+
+<div id='navigation-wrapper' vr-header ng-if=user.current.active ng-include src="'tpl/header.html'"
+     class="col-12 row row-items-flow-x-center row-items-flow-y-stretch">
+
+</div>
+
+<div id="grid-wrapper" class="row row-items-flow-x-start row-items-flow-y-start row-content-position-y-start">
+    <div id='ng-view' autoscroll="true" class="col-12" ng-view></div>
+</div>
+
+<div class="modal-underlay hide" ng-class="{flex: dialog.visible}" ng-include src="'tpl/dialog.html'"></div>
+
+<div id="alert-container" class="{{alert.type}}" ng-click="alert.onClick()" ng-class="{hide: !alert.visible}"> 
+    <span class="content">{{alert.content}}</span> 
+</div>
+
+
+<!-- footer code from drupal site -->
+<!--   <footer class="footer container-fluid">
+      <div class="region region-footer">
+    <section id="block-menu-block-1" class="block block-menu-block clearfix">
+
+        <h2 class="block-title"><a href="http://www.google.com" title="">Solutions</a></h2>
+    
+  <div class="menu-block-wrapper menu-block-1 menu-name-menu-footer-menu parent-mlid-344 menu-level-1">
+  <ul class="menu nav"><li class="first leaf menu-mlid-345"><a href="http://www.google.com" title="">Broadcasters</a></li>
+<li class="leaf menu-mlid-346"><a href="http://www.google.com" title="">Marketers</a></li>
+<li class="last leaf menu-mlid-347"><a href="http://www.google.com" title="">Enterprise</a></li>
+</ul></div>
+
+</section>
+<section id="block-menu-block-2" class="block block-menu-block clearfix">
+
+        <h2 class="block-title"><a href="http://www.google.com" title="">Products</a></h2>
+    
+  <div class="menu-block-wrapper menu-block-2 menu-name-menu-footer-menu parent-mlid-348 menu-level-1">
+  <ul class="menu nav"><li class="first leaf menu-mlid-349"><a href="http://www.google.com" title="">Multi-camera VR Engine SDK</a></li>
+<li class="leaf menu-mlid-350"><a href="http://www.google.com" title="">Multi-camera Cloud Auto-Stitching</a></li>
+<li class="last leaf menu-mlid-351"><a href="http://www.google.com" title="">Multi-camera Rigs</a></li>
+</ul></div>
+
+</section>
+<section id="block-menu-block-3" class="block block-menu-block clearfix">
+
+        <h2 class="block-title"><a href="http://www.google.com" title="">Services</a></h2>
+    
+  <div class="menu-block-wrapper menu-block-3 menu-name-menu-footer-menu parent-mlid-352 menu-level-1">
+  <ul class="menu nav"><li class="first leaf menu-mlid-353"><a href="http://www.google.com" title="">Content management system</a></li>
+<li class="leaf menu-mlid-354"><a href="http://www.google.com" title="">Real-time V analytics</a></li>
+<li class="last leaf menu-mlid-355"><a href="http://www.google.com" title="">Live 360 streaming</a></li>
+</ul></div>
+
+</section>
+  </div>
+  </footer>
+ -->
+<!-- d55b740 - Wed Aug 30 2017 11:00:09 GMT-0400 (Eastern Daylight Time) -->
+
+</body>
+</html>
+
