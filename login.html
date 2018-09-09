@@ -270,19 +270,65 @@ text-align: center;
                 <div class="row">
                     
 
+<div id="ng-view" autoscroll="true" class="col-12 ng-scope" ng-view=""><update-title title="ENVRMNT" class="ng-scope ng-isolate-scope"></update-title>
+<!-- ngInclude:  --><div class="col-12 ng-scope" ng-class="{flex: dialog.visible}" ng-include="" src="'tpl/dialog.html'"><update-title title="ENVRMNT" class="ng-scope ng-isolate-scope"></update-title>
+<div class="modal row portal ng-scope" ng-controller="dialogCtrl">
+    <div class="header col-12 row">
+        <div class="content col-full row row-items-flow-x-center">
+            <!-- ngIf: dialog.type === 'login' --><span ng-if="dialog.type === 'login'" class="hide ng-scope">LOGIN</span><!-- end ngIf: dialog.type === 'login' -->
+            <!-- ngIf: dialog.type === 'request-invitation' -->
+            <!-- ngIf: dialog.type === 'forgot-password' -->
+            <!-- ngIf: dialog.type === 'image-cropping' -->
+            <!-- ngIf: dialog.type === 'confirm-navigation' -->
+            <!-- ngIf: dialog.type === 'create-new-password' -->
 
-                    <div ng-if="dialog.type === 'login'" class="content col-full row row-items-flow-x-center page ng-scope">
-                        <img src="./images/icon-180.png" width="300" height="95">
-                        <form name="loginForm" ng-submit="login(loginInfo)" class="col-12 row row-items-flow-x-center ng-pristine ng-valid">
-                            <input class="col-8 form-input-field form-input-field-normal ng-pristine ng-untouched ng-valid ng-empty" ng-model="loginInfo.emailAddress" placeholder="Email address" type="text" name="username">
-                            <input class="col-8 form-input-field form-input-field-normal ng-pristine ng-untouched ng-valid ng-empty" placeholder="Password" type="password" ng-model="loginInfo.password" name="password">
-                            <div class="col-8">
-                                <!-- ngIf: dialog.error -->
-                                <div class="center mvl"><a ng-click="dialog.changeTo('forgot-password')">&nbsp;Forgot Password?</a></div>
-                            </div>
-                            <input class="col-8 form-button form-button-normal-font submit-button" type="submit" value="Sign In">
-                        </form>
-                    </div>
+        </div>
+        <!-- ngIf: user.current.active -->
+    </div>
+    <div class="body col-12 row">
+
+        <!-- Sign in to  envrmnt -->
+        <!-- ngIf: dialog.type === 'login' --><div ng-if="dialog.type === 'login'" class="content col-full row row-items-flow-x-center page ng-scope">
+            
+            <form name="loginForm" ng-submit="login(loginInfo)" class="col-12 row row-items-flow-x-center ng-pristine ng-valid">
+                <input class="col-8 form-input-field form-input-field-normal ng-pristine ng-untouched ng-valid ng-empty" ng-model="loginInfo.emailAddress" placeholder="Email address" type="text" name="username">
+                <input class="col-8 form-input-field form-input-field-normal ng-pristine ng-untouched ng-valid ng-empty" placeholder="Password" type="password" ng-model="loginInfo.password" name="password">
+                <div class="col-8">
+                    <!-- ngIf: dialog.error -->
+                    <div class="center mvl"><a ng-click="dialog.changeTo('forgot-password')">&nbsp;Forgot Password?</a></div>
+                </div>
+                <input class="col-8 form-button form-button-normal-font submit-button" type="submit" value="Sign In">
+            </form>
+        </div><!-- end ngIf: dialog.type === 'login' -->
+
+        <!-- Recover your password -->
+        <!-- ngIf: dialog.type === 'forgot-password' -->
+
+        <!-- Create a new password -->
+        <!-- ngIf: dialog.type === 'create-new-password' -->
+
+        <!-- Request an invitation to envrmnt -->
+        <!-- ngIf: dialog.type === 'request-invitation' -->
+
+        <!-- Uploading image -->
+        <!-- ngIf: dialog.type === 'image-cropping' -->
+
+        <!-- Whoa there... -->
+        <!-- ngIf: dialog.type === 'confirm-navigation' -->
+
+        <!-- ngIf: dialog.error && dialog.type !== 'login' && dialog.type !== 'forgot-password' -->
+    </div>
+
+    <!-- ngIf: dialog.type === 'create-new-password' -->
+
+    <!-- ngIf: dialog.type !== 'create-new-password' --><div class="footer col-12 row ng-scope" ng-if="dialog.type !== 'create-new-password'">
+        <div class="content col-full row row-items-flow-x-center page">
+            <!--<span ng-if="dialog.type === 'login'">Not registered? <a ng-click="dialog.changeTo('request-invitation')">Request an invitation.</a></span>-->
+            <!-- ngIf: dialog.type === 'forgot-password' -->
+            <!-- ngIf: dialog.type === 'image-cropping' -->
+        </div>
+    </div><!-- end ngIf: dialog.type !== 'create-new-password' -->
+</div></div></div>
 
 
 
