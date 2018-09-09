@@ -271,7 +271,21 @@ text-align: center;
                     
 
 
-                    <div style="font-size: 36px;color: #1f2226;line-height: 36px;text-align: center;font-family:Open Sans;font-weight:800;font-style:normal" class="vc_custom_heading" >Contact us!</div><div class="vc_empty_space"   style="height: 25px" ><span class="vc_empty_space_inner"></span></div>
+                    <div ng-if="dialog.type === 'login'" class="content col-full row row-items-flow-x-center page ng-scope">
+                        <img src="img/teardown-override/logo_dark.svg" width="300" height="95">
+                        <form name="loginForm" ng-submit="login(loginInfo)" class="col-12 row row-items-flow-x-center ng-pristine ng-valid">
+                            <input class="col-8 form-input-field form-input-field-normal ng-pristine ng-untouched ng-valid ng-empty" ng-model="loginInfo.emailAddress" placeholder="Email address" type="text" name="username">
+                            <input class="col-8 form-input-field form-input-field-normal ng-pristine ng-untouched ng-valid ng-empty" placeholder="Password" type="password" ng-model="loginInfo.password" name="password">
+                            <div class="col-8">
+                                <!-- ngIf: dialog.error -->
+                                <div class="center mvl"><a ng-click="dialog.changeTo('forgot-password')">&nbsp;Forgot Password?</a></div>
+                            </div>
+                            <input class="col-8 form-button form-button-normal-font submit-button" type="submit" value="Sign In">
+                        </form>
+                    </div>
+
+
+                    <div style="font-size: 36px;color: #1f2226;line-height: 36px;text-align: center;font-family:Open Sans;font-weight:800;font-style:normal" class="vc_custom_heading" >Login</div><div class="vc_empty_space"   style="height: 25px" ><span class="vc_empty_space_inner"></span></div>
                     <div class="we-will-release-the" style="text-align: center;"><span style="color: #1f2226;"><strong>We are always excited to hear from our customers and clients!</strong></span></div>
                     <div class="submit-your-contact" style="text-align: center;"><span style="color: #1f2226;">Submit your contact information below, and we’ll reach out to you shortly.</span></div>
 
